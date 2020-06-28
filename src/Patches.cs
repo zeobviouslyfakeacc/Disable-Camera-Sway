@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Harmony;
+﻿using Harmony;
 
 namespace DisableCameraSway
 {
-     [HarmonyPatch(typeof(PlayerManager), "MaybeRotateCamera")]
-    internal class PlayerManager_MaybeRotateCamera
+    [HarmonyPatch(typeof(PlayerManager), "MaybeRotateCamera")]
+    internal static class PlayerManager_MaybeRotateCamera
     {
         internal static bool Prefix()
         {
