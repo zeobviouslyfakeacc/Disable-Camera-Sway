@@ -10,4 +10,13 @@ namespace DisableCameraSway
             return false;
         }
     }
+
+    [HarmonyPatch(typeof(vp_FPSCamera), "Start")]
+    internal static class vp_FPSCamera_Start
+    {
+        internal static void Postfix(vp_FPSCamera __instance)
+        {
+            __instance.m_MaxAmbientSwayAngleDegrees = 0;
+        }
+    }
 }
