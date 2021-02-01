@@ -7,7 +7,7 @@ namespace DisableCameraSway
     {
         public override void OnApplicationStart()
         {
-            Debug.Log($"[{InfoAttribute.Name}] Version {InfoAttribute.Version} loaded!");
+            Debug.Log($"[{Info.Name}] Version {Info.Version} loaded!");
         }
     }
 }
