@@ -16,7 +16,7 @@ namespace DisableCameraSway
     {
         internal static void Postfix(vp_FPSCamera __instance)
         {
-            __instance.m_MaxAmbientSwayAngleDegrees = 0;
+            __instance.m_MaxAmbientSwayAngleDegreesA = 0;
         }
     }
 }
